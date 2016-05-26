@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.timurstarchenko.viewpager.MainActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/prBar"
+            app:cpb_background_progressbar_color= "#F44336"
+            app:cpb_background_progressbar_width="7dp"
+            app:cpb_progressbar_color="#54d127"
+            app:cpb_progressbar_width="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="получено"
+            android:id="@+id/textViewGet"
+            android:layout_alignTop="@+id/prBar"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="потрачено"
+            android:id="@+id/textViewSpent"
+            android:layout_alignBottom="@+id/prBar"
+            android:layout_marginLeft="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            app:backgroundTint="@color/green"
+            android:id="@+id/btn"
+            android:tint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_kzt"
+            android:text="@string/kzt"
+            android:layout_alignBottom="@+id/prBar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="-25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_alignBottom="@+id/textViewGet"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginRight="23dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="250dp">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:tint="@color/white"
+                app:cb_color="@color/green"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/addContent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                app:cb_color="@color/white"
+                app:cb_pressedRingWidth="8dip"
+                android:tint="@color/red"
+                android:layout_marginRight="39dp"
+                android:layout_marginEnd="39dp"
+                android:src="@drawable/abc_seekbar_track_material"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addContent"
+                android:layout_centerHorizontal="true"
+                android:stretchColumns="*">
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/text_1Row_1"
+                        android:gravity="center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageRow_1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/text2Row_1"
+                        android:gravity="center_horizontal" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
