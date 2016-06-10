@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ViewPager</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="kzt">KZT</string>
+    <string name="Sum">Сумма</string>
+    <string name="comment">Коментарий</string>
+    <string name="Add_consumption">Выбрать расход</string>
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
